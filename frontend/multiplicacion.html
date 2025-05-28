@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplicación - Operaciones Aritméticas</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/multiplicacion.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>MateFácil</h1>
+        </div>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="suma.html"><i class="fas fa-plus"></i> Suma</a></li>
+                <li><a href="resta.html"><i class="fas fa-minus"></i> Resta</a></li>
+                <li><a href="multiplicacion.html" class="active"><i class="fas fa-times"></i> Multiplicación</a></li>
+                <li><a href="division.html"><i class="fas fa-divide"></i> División</a></li>
+                <li><a href="actividades.html"><i class="fas fa-tasks"></i> Actividades</a></li>
+                <li><a href="recursos.html"><i class="fas fa-book"></i> Recursos</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <main id="operation-content">
+        <section class="operation-hero multiplicacion-hero">
+            <div class="container">
+            <h2>Calculadora de Multiplicación</h2>
+            <p class="operation-description">
+                La multiplicación es una operación aritmética que consiste en sumar un número tantas veces como indica otro número.
+                Es una forma abreviada de sumar un número repetidamente y se representa con el signo "×" o "*".
+            </p>
+            
+            <div class="calculator">
+                <div class="input-section">
+                    <div class="input-group">
+                        <label for="num1">Primer número (multiplicando):</label>
+                        <input type="number" id="num1" placeholder="Ingrese el primer número">
+                    </div>
+                    <div class="input-group">
+                        <label for="num2">Segundo número (multiplicador):</label>
+                        <input type="number" id="num2" placeholder="Ingrese el segundo número">
+                    </div>
+                </div>
+                
+                <button id="calculate-btn" class="btn" onclick="calcularMultiplicacion()">Calcular</button>
+                
+                <div class="result-container">
+                    <h3>Resultado:</h3>
+                    <div id="result">?</div>
+                    <div id="steps-container" class="steps-explanation">
+                        <h4>Paso a paso:</h4>
+                        <div id="steps">
+                            <p>Ingresa números para ver los pasos de la operación.</p>
+                        </div>
+                    </div>
+                    <div id="error-message" class="error-message"></div>
+                </div>
+            </div>
+            
+            <div class="video-section">
+                <h3>Video Explicativo sobre la Multiplicación</h3>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/dummyMultiplicacionNinos" title="Video Explicativo de Multiplicación" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="examples-section">
+            <h3>Ejemplos de Multiplicación</h3>
+            <div class="example">
+                <h4>Ejemplo 1: Multiplicación Básica</h4>
+                <p>4 × 3 = 12</p>
+                <p>Explicación: El 4 repetido 3 veces: 4 + 4 + 4 = 12. También se puede ver como 3 repetido 4 veces: 3 + 3 + 3 + 3 = 12.</p>
+            </div>
+            <div class="example">
+                <h4>Ejemplo 2: Multiplicación por Cero</h4>
+                <p>7 × 0 = 0</p>
+                <p>Explicación: Cualquier número multiplicado por cero siempre da como resultado cero, ya que estamos sumando cero veces el número.</p>
+            </div>
+            <div class="example">
+                <h4>Ejemplo 3: Multiplicación con Decimales</h4>
+                <p>2.5 × 4 = 10</p>
+                <p>Explicación: Estamos sumando 2.5 cuatro veces: 2.5 + 2.5 + 2.5 + 2.5 = 10.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Operaciones Aritméticas - UANL FIME Grupo 007 Equipo 5</p>
+    </footer>
+</body>
+</html>

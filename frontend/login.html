@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Iniciar Sesión</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    body {
+  background-image: linear-gradient(to bottom, #0e4943, #23ac9e);
+  height: 100vh; /* Opcional: cubre toda la pantalla */
+  margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <h2 style="color: black;">Iniciar Sesión</h2>
+  <form id="loginForm">
+    <input type="email" id="email" placeholder="Correo" required />
+    <input type="password" id="password" placeholder="Contraseña" required />
+    <button type="submit">Entrar</button>
+  </form>
+  <p style="color: black;">¿No tienes cuenta? <a href="signup.html">Regístrate</a></p>
+
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+
+      const res = await fetch('/api/users/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, password })
+      });
+
+      const data = await res.json();
+      if (res.ok) {
+        alert('Bienvenido');
+        localStorage.setItem('token', data.token); // Guarda JWT
+        window.location.href = 'index.html'; // Redirige a la app
+      } else {
+        alert(data.message || 'Error al iniciar sesión');
+      }
+    });
+  </script>
+</body>
+</html>

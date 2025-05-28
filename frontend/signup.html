@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registrarse</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    body {
+  background-image: linear-gradient(to bottom, #331c60, #7340d8);
+  height: 100vh; /* Opcional: cubre toda la pantalla */
+  margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <h2 style="color: black;">Registrarse</h2>
+  <form id="signupForm">
+    <input type="text" id="name" placeholder="Nombre" required />
+    <input type="email" id="email" placeholder="Correo" required />
+    <input type="password" id="password" placeholder="Contraseña" required />
+    <button type="submit">Crear cuenta</button>
+  </form>
+  <p style="color: black;">¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a></p>
+
+  <script>
+    document.getElementById('signupForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+
+      const res = await fetch('/api/users/register', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, password })
+      });
+
+      const data = await res.json();
+      if (res.ok) {
+        alert('Usuario creado correctamente');
+        window.location.href = 'login.html';
+      } else {
+        alert(data.message || 'Error al registrarse');
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suma - MateFácil</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>MateFácil</h1>
+        </div>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="suma.html" class="active"><i class="fas fa-plus"></i> Suma</a></li>
+                <li><a href="resta.html"><i class="fas fa-minus"></i> Resta</a></li>
+                <li><a href="multiplicacion.html"><i class="fas fa-times"></i> Multiplicación</a></li>
+                <li><a href="division.html"><i class="fas fa-divide"></i> División</a></li>
+                <li><a href="actividades.html"><i class="fas fa-tasks"></i> Actividades</a></li>
+                <li><a href="recursos.html"><i class="fas fa-book"></i> Recursos</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <main id="operation-content">
+        <section class="operation-hero suma-hero">
+            <div class="container">
+                <h2>Suma</h2>
+                <div class="operation-description">
+                    <p>La suma es una operación aritmética básica que consiste en combinar dos o más números para obtener una cantidad total. Se representa con el símbolo "+". La suma nos ayuda a encontrar el valor total cuando juntamos diferentes cantidades.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="calculator-section">
+            <div class="container">
+                <h2>Calculadora de Suma</h2>
+                <div class="calculator-container">
+                    <div class="calculator-form">
+                        <div class="input-group">
+                            <label for="num1">Primer número:</label>
+                            <input type="number" id="num1" placeholder="Ingresa un número" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="num2">Segundo número:</label>
+                            <input type="number" id="num2" placeholder="Ingresa otro número" required>
+                        </div>
+                        <button id="calculate-btn" class="btn">Calcular</button>
+                    </div>
+                    <div class="result-container">
+                        <h3>Resultado:</h3>
+                        <div id="result">?</div>
+                        <div id="steps-container" class="steps-explanation">
+                            <h4>Paso a paso:</h4>
+                            <div id="steps">
+                                <p>Ingresa números para ver los pasos de la operación.</p>
+                            </div>
+                        </div>
+                        <div id="error-message" class="error-message"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="explanation-section">
+            <div class="container">
+                <h2>¿Cómo funciona la suma?</h2>
+                <div class="explanation-content">
+                    <div class="explanation-text">
+                        <h3>Conceptos Básicos</h3>
+                        <ul>
+                            <li><strong>Sumandos:</strong> Son los números que se añaden.</li>
+                            <li><strong>Suma o Total:</strong> Es el resultado de la operación.</li>
+                            <li><strong>Propiedades:</strong> La suma es conmutativa (a + b = b + a) y asociativa ((a + b) + c = a + (b + c)).</li>
+                        </ul>
+                        
+                        <h3>Método de Suma Vertical</h3>
+                        <p>Para sumas más complejas, se recomienda colocar los números uno encima de otro, alineando las unidades, decenas, etc.</p>
+                        <p>Ejemplos:</p>
+                        <div class="example-box">
+                            <div class="example-math">
+                                <p>   24</p>
+                                <p>+ 18</p>
+                                <p>———</p>
+                                <p>   42</p>
+                            </div>
+                            <div class="example-explanation">
+                                <p>1. Suma las unidades: 4 + 8 = 12. Escribe 2 y llevas 1.</p>
+                                <p>2. Suma las decenas: 2 + 1 + 1 = 4.</p>
+                                <p>3. El resultado es 42.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="explanation-image">
+                        <img src="img/suma-illustration.svg" alt="Ilustración de suma">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="video-section">
+            <div class="container">
+                <h2>Videos Explicativos</h2>
+                <div class="video-container">
+                    <div class="video-dropdown">
+                        <div class="dropdown-header">
+                            <h3>Sumas de un dígito</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="https://www.youtube.com/watch?v=example1" target="_blank">
+                                <i class="fab fa-youtube"></i> Aprende a sumar del 1 al 10
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=example2" target="_blank">
+                                <i class="fab fa-youtube"></i> Trucos para sumas rápidas
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="video-dropdown">
+                        <div class="dropdown-header">
+                            <h3>Sumas de dos dígitos</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="https://www.youtube.com/watch?v=example3" target="_blank">
+                                <i class="fab fa-youtube"></i> Sumas con llevada
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=example4" target="_blank">
+                                <i class="fab fa-youtube"></i> Ejercicios prácticos
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="video-dropdown">
+                        <div class="dropdown-header">
+                            <h3>Sumas de tres dígitos o más</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="https://www.youtube.com/watch?v=example5" target="_blank">
+                                <i class="fab fa-youtube"></i> Sumas de números grandes
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=example6" target="_blank">
+                                <i class="fab fa-youtube"></i> Problemas resueltos paso a paso
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="practice-section">
+            <div class="container">
+                <h2>Practica lo Aprendido</h2>
+                <p>Refuerza tus conocimientos con estos recursos:</p>
+                <div class="resource-buttons">
+                    <a href="actividades.html#suma" class="btn btn-secondary">
+                        <i class="fas fa-tasks"></i> Actividades de Suma
+                    </a>
+                    <a href="recursos.html#suma" class="btn btn-secondary">
+                        <i class="fas fa-file-pdf"></i> Hojas de Ejercicios
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>MateFácil</h3>
+                    <p>Universidad Autónoma de Nuevo León</p>
+                    <p>Facultad de Ingeniería Mecánica y Eléctrica</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="suma.html">Suma</a></li>
+                        <li><a href="resta.html">Resta</a></li>
+                        <li><a href="multiplicacion.html">Multiplicación</a></li>
+                        <li><a href="division.html">División</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contacto</h3>
+                    <p><i class="fas fa-envelope"></i> matefacil@uanl.edu.mx</p>
+                    <p><i class="fas fa-map-marker-alt"></i> FIME, Ciudad Universitaria</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 MateFácil - Todos los derechos reservados</p>
+                <p>Desarrollado por Equipo 5 - Grupo 007</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/suma.js"></script>
+</body>
+</html>

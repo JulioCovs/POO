@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resta - Operaciones Aritméticas</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="js/resta.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>MateFácil</h1>
+        </div>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="suma.html"><i class="fas fa-plus"></i> Suma</a></li>
+                <li><a href="resta.html" class="active"><i class="fas fa-minus"></i> Resta</a></li>
+                <li><a href="multiplicacion.html"><i class="fas fa-times"></i> Multiplicación</a></li>
+                <li><a href="division.html"><i class="fas fa-divide"></i> División</a></li>
+                <li><a href="actividades.html"><i class="fas fa-tasks"></i> Actividades</a></li>
+                <li><a href="recursos.html"><i class="fas fa-book"></i> Recursos</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <main id="operation-content">
+        <section class="operation-hero resta-hero">
+            <div class="container">
+            <h2>Calculadora de Resta</h2>
+            <p class="operation-description">
+                La resta es una operación aritmética que representa la operación de eliminar objetos de una colección. 
+                Es la operación inversa a la suma y se utiliza para encontrar la diferencia entre dos números.
+            </p>
+            
+            <div class="calculator">
+                <div class="calculator-container">
+                    <div class="calculator-form">
+                        <div class="input-group">
+                        <label for="num1">Primer número:</label>
+                        <input type="number" id="num1" placeholder="Ingrese el primer número">
+                    </div>
+                    <div class="input-group">
+                        <label for="num2">Segundo número:</label>
+                        <input type="number" id="num2" placeholder="Ingrese el segundo número">
+                    </div>
+                </div>
+                
+                <button id="calculate-btn" class="btn" onclick="calcularResta()">Calcular</button>
+                
+                <div class="result-section">
+                    <h3>Resultado:</h3>
+                    <p id="result">?</p>
+                    <div id="explanation-container" class="hidden">
+                        <h4>Explicación:</h4>
+                        <p id="explanation-text"></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="video-section">
+                <h3>Video Explicativo sobre la Resta</h3>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/dummyRestaNinos" title="Video Explicativo de Resta" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="examples-section">
+            <h3>Ejemplos de Resta</h3>
+            <div class="example">
+                <h4>Ejemplo 1: Resta Simple</h4>
+                <p>10 - 3 = 7</p>
+                <p>Explicación: Al restar 3 de 10, estamos quitando 3 unidades del total, quedándonos con 7.</p>
+            </div>
+            <div class="example">
+                <h4>Ejemplo 2: Resta con Números Negativos</h4>
+                <p>5 - 8 = -3</p>
+                <p>Explicación: Cuando restamos un número mayor del menor, el resultado es negativo. En este caso, al restar 8 de 5, el resultado es -3.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Operaciones Aritméticas - UANL FIME Grupo 007 Equipo 5</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>División - Operaciones Aritméticas</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/division.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>MateFácil</h1>
+        </div>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="suma.html"><i class="fas fa-plus"></i> Suma</a></li>
+                <li><a href="resta.html"><i class="fas fa-minus"></i> Resta</a></li>
+                <li><a href="multiplicacion.html"><i class="fas fa-times"></i> Multiplicación</a></li>
+                <li><a href="division.html" class="active"><i class="fas fa-divide"></i> División</a></li>
+                <li><a href="actividades.html"><i class="fas fa-tasks"></i> Actividades</a></li>
+                <li><a href="recursos.html"><i class="fas fa-book"></i> Recursos</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <main id="operation-content">
+        <section class="operation-hero division-hero">
+            <div class="container">
+            <h2 id="calculator-title">Calculadora de División</h2>
+            <p class="operation-description" id="operation-description">
+                La división es una operación aritmética que consiste en averiguar cuántas veces un número (divisor) está contenido en 
+                otro número (dividendo). Es la operación inversa a la multiplicación y se representa con el signo "÷" o "/".
+            </p>
+            
+            <div class="calculator" id="calculator">
+                <div class="input-section" id="input-section">
+                    <div class="input-group" id="dividend-input">
+                        <label for="num1" id="dividend-label">Dividendo:</label>
+                        <input type="number" id="num1" placeholder="Ingrese el dividendo" />
+                    </div>
+                    <div class="input-group" id="divisor-input">
+                        <label for="num2" id="divisor-label">Divisor:</label>
+                        <input type="number" id="num2" placeholder="Ingrese el divisor" />
+                    </div>
+                </div>
+                
+                <button id="calculate-btn" class="btn" onclick="calcularDivision()">Calcular</button>
+                
+                <div class="result-section" id="result-section">
+                    <h3 id="result-title">Resultado:</h3>
+                    <p id="result">?</p>
+                    <div id="explanation-container" class="hidden" id="explanation-container">
+                        <h4 id="explanation-title">Explicación:</h4>
+                        <p id="explanation-text"></p>
+                    </div>
+                    <div id="error-container" class="hidden error-message" id="error-container">
+                        <p id="error-text"></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="video-section" id="video-section">
+                <h3 id="video-title">Video Explicativo sobre la División</h3>
+                <div class="video-container" id="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/dummyDivisionNinos" title="Video Explicativo de División" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="examples-section" id="examples-section">
+            <h3 id="examples-title">Ejemplos de División</h3>
+            <div class="example" id="example-1">
+                <h4 id="example-1-title">Ejemplo 1: División Exacta</h4>
+                <p>15 ÷ 3 = 5</p>
+                <p>Explicación: El número 3 está contenido 5 veces en el número 15, sin dejar residuo.</p>
+            </div>
+            <div class="example" id="example-2">
+                <h4 id="example-2-title">Ejemplo 2: División con Residuo</h4>
+                <p>17 ÷ 4 = 4 con residuo 1</p>
+                <p>Explicación: El número 4 está contenido 4 veces completas en el número 17, y queda un residuo de 1.</p>
+            </div>
+            <div class="example" id="example-3">
+                <h4 id="example-3-title">Ejemplo 3: División con Decimales</h4>
+                <p>10 ÷ 4 = 2.5</p>
+                <p>Explicación: El resultado de dividir 10 entre 4 es 2.5, lo que significa que 4 está contenido 2 veces y media en 10.</p>
+            </div>
+            <div class="example" id="example-4">
+                <h4 id="example-4-title">Ejemplo 4: División entre Cero</h4>
+                <p>8 ÷ 0 = Error</p>
+                <p>Explicación: En matemáticas, la división entre cero no está definida, ya que no hay un número que multiplicado por 0 dé como resultado 8.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <p>&copy; 2025 Operaciones Aritméticas - UANL FIME Grupo 007 Equipo 5</p>
+    </footer>
+</body>
+</html>

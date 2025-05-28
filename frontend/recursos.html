@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos - Operaciones Aritméticas</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>MateFácil</h1>
+        </div>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="suma.html"><i class="fas fa-plus"></i> Suma</a></li>
+                <li><a href="resta.html"><i class="fas fa-minus"></i> Resta</a></li>
+                <li><a href="multiplicacion.html"><i class="fas fa-times"></i> Multiplicación</a></li>
+                <li><a href="division.html"><i class="fas fa-divide"></i> División</a></li>
+                <li><a href="actividades.html"><i class="fas fa-tasks"></i> Actividades</a></li>
+                <li><a href="recursos.html" class="active"><i class="fas fa-book"></i> Recursos</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <main id="operation-content">
+        <section class="operation-hero resources-hero">
+            <div class="container">
+            <h2>Videos Explicativos</h2>
+            <p>Explora nuestra colección de videos educativos organizados por operación aritmética.</p>
+            
+            <div class="dropdown-section">
+                <div class="dropdown">
+                    <button class="dropdown-btn" onclick="toggleDropdown('suma-videos')">Videos de Suma</button>
+                    <div id="suma-videos" class="dropdown-content">
+                        <a href="https://www.youtube.com/watch?v=video1" target="_blank">Introducción a la Suma</a>
+                        <a href="https://www.youtube.com/watch?v=video2" target="_blank">Suma de Números Enteros</a>
+                        <a href="https://www.youtube.com/watch?v=video3" target="_blank">Suma con Llevada</a>
+                        <a href="https://www.youtube.com/watch?v=video4" target="_blank">Suma de Decimales</a>
+                    </div>
+                </div>
+                
+                <div class="dropdown">
+                    <button class="dropdown-btn" onclick="toggleDropdown('resta-videos')">Videos de Resta</button>
+                    <div id="resta-videos" class="dropdown-content">
+                        <a href="https://www.youtube.com/watch?v=video5" target="_blank">Introducción a la Resta</a>
+                        <a href="https://www.youtube.com/watch?v=video6" target="_blank">Resta con Préstamo</a>
+                        <a href="https://www.youtube.com/watch?v=video7" target="_blank">Resta de Decimales</a>
+                        <a href="https://www.youtube.com/watch?v=video8" target="_blank">Problemas de Resta</a>
+                    </div>
+                </div>
+                
+                <div class="dropdown">
+                    <button class="dropdown-btn" onclick="toggleDropdown('multiplicacion-videos')">Videos de Multiplicación</button>
+                    <div id="multiplicacion-videos" class="dropdown-content">
+                        <a href="https://www.youtube.com/watch?v=video9" target="_blank">Introducción a la Multiplicación</a>
+                        <a href="https://www.youtube.com/watch?v=video10" target="_blank">Tablas de Multiplicar</a>
+                        <a href="https://www.youtube.com/watch?v=video11" target="_blank">Multiplicación de Varios Dígitos</a>
+                        <a href="https://www.youtube.com/watch?v=video12" target="_blank">Multiplicación de Decimales</a>
+                    </div>
+                </div>
+                
+                <div class="dropdown">
+                    <button class="dropdown-btn" onclick="toggleDropdown('division-videos')">Videos de División</button>
+                    <div id="division-videos" class="dropdown-content">
+                        <a href="https://www.youtube.com/watch?v=video13" target="_blank">Introducción a la División</a>
+                        <a href="https://www.youtube.com/watch?v=video14" target="_blank">División con Residuo</a>
+                        <a href="https://www.youtube.com/watch?v=video15" target="_blank">División de Números Grandes</a>
+                        <a href="https://www.youtube.com/watch?v=video16" target="_blank">División de Decimales</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="materials-container">
+            <h2>Materiales Descargables</h2>
+            <p>Encuentra recursos descargables para practicar las operaciones aritméticas.</p>
+            
+            <div class="materials-list">
+                <div class="material-card">
+                    <h3>Guías de Estudio</h3>
+                    <ul>
+                        <li><a href="materials/guia-suma.pdf" download>Guía de Suma</a></li>
+                        <li><a href="materials/guia-resta.pdf" download>Guía de Resta</a></li>
+                        <li><a href="materials/guia-multiplicacion.pdf" download>Guía de Multiplicación</a></li>
+                        <li><a href="materials/guia-division.pdf" download>Guía de División</a></li>
+                    </ul>
+                </div>
+                
+                <div class="material-card">
+                    <h3>Hojas de Ejercicios</h3>
+                    <ul>
+                        <li><a href="materials/ejercicios-suma.pdf" download>Ejercicios de Suma</a></li>
+                        <li><a href="materials/ejercicios-resta.pdf" download>Ejercicios de Resta</a></li>
+                        <li><a href="materials/ejercicios-multiplicacion.pdf" download>Ejercicios de Multiplicación</a></li>
+                        <li><a href="materials/ejercicios-division.pdf" download>Ejercicios de División</a></li>
+                        <li><a href="materials/ejercicios-mixtos.pdf" download>Ejercicios Mixtos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="material-card">
+                    <h3>Tarjetas de Memoria</h3>
+                    <ul>
+                        <li><a href="materials/tarjetas-suma.pdf" download>Tarjetas de Suma</a></li>
+                        <li><a href="materials/tarjetas-resta.pdf" download>Tarjetas de Resta</a></li>
+                        <li><a href="materials/tablas-multiplicar.pdf" download>Tablas de Multiplicar</a></li>
+                        <li><a href="materials/referencias-division.pdf" download>Referencias de División</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="links-container">
+            <h2>Enlaces Recomendados</h2>
+            <p>Recursos externos que pueden ayudarte a practicar y aprender más sobre operaciones aritméticas.</p>
+            
+            <div class="links-grid">
+                <div class="link-card">
+                    <h3>Khan Academy</h3>
+                    <p>Lecciones interactivas sobre matemáticas básicas.</p>
+                    <a href="https://es.khanacademy.org/math/arithmetic" target="_blank" class="link-btn">Visitar</a>
+                </div>
+                
+                <div class="link-card">
+                    <h3>Math is Fun</h3>
+                    <p>Explicaciones sencillas y juegos para aprender matemáticas.</p>
+                    <a href="https://www.mathsisfun.com/numbers/index.html" target="_blank" class="link-btn">Visitar</a>
+                </div>
+                
+                <div class="link-card">
+                    <h3>Smartick</h3>
+                    <p>Plataforma adaptativa para aprender matemáticas.</p>
+                    <a href="https://www.smartick.es/" target="_blank" class="link-btn">Visitar</a>
+                </div>
+                
+                <div class="link-card">
+                    <h3>Math Playground</h3>
+                    <p>Juegos educativos para practicar operaciones aritméticas.</p>
+                    <a href="https://www.mathplayground.com/" target="_blank" class="link-btn">Visitar</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Operaciones Aritméticas - UANL FIME Grupo 007 Equipo 5</p>
+    </footer>
+</body>
+</html>
